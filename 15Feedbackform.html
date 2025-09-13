@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>College Feedback Form</title>
+  <style>
+      body {
+    font-family: Arial, sans-serif;
+    background: #0ac0d8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 100px;
+  }
+
+  main {
+    background: #9ca40a42;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    max-width: 900px;
+    width: 100%;
+    position: relative;
+  }
+
+  h1 {
+    text-align: center;
+    color: #ebcd0c;
+    margin-bottom: 20px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #444;
+  }
+
+  input, select, textarea {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+
+  textarea {
+    min-height: 80px;
+    resize: vertical;
+  }
+
+  .radio-group, .checkbox-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+
+  .radio-group label, .checkbox-group label {
+    font-weight: normal;
+    margin: 3px 0;
+  }
+
+  .actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  .radio-group{
+  display: flex;
+  flex-direction: column; 
+  gap: 5px;               
+  margin-bottom: 15px;
+  font-size: 14px;
+  width: auto;
+  align-items: start;
+  height: auto;
+}
+.checkbox-group{
+   display: flex;
+  flex-direction: column; 
+  gap: 5px;               
+  margin-bottom: 15px;
+  font-size: 14px;
+  width: auto;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.radio-group label,
+.checkbox-group label {
+  display: flex;
+  align-items: first baseline;
+  gap: 6px;              
+  font-weight: normal;
+  cursor: pointer;
+  width: auto;
+  height: auto;
+}
+
+
+  button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+  button[type="submit"] {
+    background: #0077cc;
+    color: white;
+  }
+
+  button.secondary {
+    background: #eee;
+    color: #333;
+  }
+
+  button:hover {
+    opacity: 0.9;
+  }
+
+  </style>
+</head>
+<body>
+  <main class="card" role="main">
+    <h1>College Feedback Form</h1>
+
+    <form id="feedbackForm">
+      <div class="full">
+        <label for="name">Full name</label>
+        <input id="name" name="name" type="text" placeholder="Enter Your Name" required />
+      </div>
+
+      <div>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="Email" required />
+      </div>
+
+      <div>
+        <label for="phone">Phone</label>
+        <input id="phone" name="phone" type="tel" pattern="[0-9+\-() ]{7,}" />
+      </div>
+
+      <div>
+        <label for="roll">Roll ID</label>
+        <input id="roll" name="roll" type="text" inputmode="numeric" placeholder="Enter your roll number" />
+      </div>
+
+      <div>
+        <label for="year">Year of study</label>
+        <select id="year" name="year">
+          <option value="">Select year</option>
+          <option>1st Year</option>
+          <option>2nd Year</option>
+          <option>3rd Year</option>
+          <option>4th Year</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="dept">Department</label>
+        <input id="dept" name="dept" type="text" placeholder="e.g. Cyber security" />
+      </div>
+
+      <div class="full">
+        <label for="overall">Overall Rating</label>
+        <input id="overall" name="overall" type="text" placeholder="Rate 1–10" required />
+      </div>
+
+      <div class="full">
+        <label for="faculty">Faculty Interaction</label>
+        <input id="faculty" name="faculty" type="text" placeholder="Rate 1–5 or describe" required>
+      </div>
+
+      <div class="full">
+        <label for="labs">Labs and Classroom</label>
+        <input id="labs" name="labs" type="text" placeholder="Rate 1–5 or describe" required>
+      </div>
+
+      <div class="full">
+        <label for="sports">Playground and Sports</label>
+        <input id="sports" name="sports" type="text" placeholder="Rate 1–5 or describe" required>
+      </div>
+
+      <div class="full">
+        <label for="events">Fest and Events</label>
+        <input id="events" name="events" type="text" placeholder="Rate 1–5 or describe" required>
+      </div>
+
+      <div class="full">
+        <label for="best">What is the best thing?</label>
+        <input id="best" name="best" type="text" placeholder="Best Things..." required>
+      </div>
+
+      <div class="full">
+        <label for="worst">What is the worst thing?</label>
+        <input id="worst" name="worst" type="text" placeholder="Be honest..." required>
+      </div>
+
+      <div class="full">
+        <label>Teaching quality?</label>
+        <div class="radio-group">
+          <label><input type="radio" name="teaching" value="excellent" checked /> Excellent</label>
+          <label><input type="radio" name="teaching" value="good" /> Good</label>
+          <label><input type="radio" name="teaching" value="average" /> Average</label>
+          <label><input type="radio" name="teaching" value="poor" /> Poor</label>
+        </div>
+      </div>
+
+      <div class="full">
+        <label>Need to be improved?</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="improve" value="labs" /> Labs & Equipment</label>
+          <label><input type="checkbox" name="improve" value="syllabus" /> Syllabus / Curriculum</label>
+          <label><input type="checkbox" name="improve" value="placements" /> Placement support</label>
+        </div>
+      </div>
+
+      <div>
+        <label for="date">Date of feedback</label>
+        <input id="date" name="date" type="date" />
+      </div>
+
+      <div class="full">
+        <label for="message">Your feedback</label>
+        <textarea id="message" name="message" placeholder="Write here..."></textarea>
+      </div>
+
+      <div>
+        <label for="website">Personal website / portfolio (optional)</label>
+        <input id="website" name="website" type="url" placeholder="https://" />
+      </div>
+
+      <div>
+        <label for="anon">Submit anonymously?</label>
+        <select id="anon" name="anon">
+          <option value="no">No</option>
+          <option value="yes">Yes</option>
+        </select>
+      </div>
+
+      <div class="full actions">
+        <button type="reset" class="secondary">Reset</button>
+        <button type="submit">Send Feedback</button>
+      </div>
+    </form>
+  </main>
+</body>
+</html>
