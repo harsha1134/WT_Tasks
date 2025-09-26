@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard</title>
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  body {
+    background-color: #1e2a38;
+    color: #fff;
+  }
+
+  /* Top bar */
+  .topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1da1f2;
+    padding: 10px 20px;
+  }
+
+  .topbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .topbar .user {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  /* Sidebar */
+  .sidebar {
+    width: 220px;
+    background-color: #22303f;
+    min-height: 100vh;
+    padding-top: 20px;
+    position: fixed;
+  }
+
+  .sidebar ul {
+    list-style: none;
+  }
+
+  .sidebar ul li {
+    padding: 15px 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+
+  .sidebar ul li:hover {
+    background-color: #1da1f2;
+  }
+
+  .sidebar ul li.active {
+    background-color: #1da1f2;
+  }
+
+  .sidebar ul li i {
+    margin-right: 10px;
+  }
+
+  /* Main content */
+  .main {
+    margin-left: 220px;
+    padding: 20px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #2b3b4d;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #3b4a5a;
+  }
+
+  th {
+    background-color: #22303f;
+  }
+
+  tr:hover {
+    background-color: #1da1f2;
+  }
+
+  .blue-text {
+    color: #1da1f2;
+    cursor: pointer;
+  }
+
+  /* Right side menu inside table */
+  .right-menu {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #22303f;
+    border-radius: 5px;
+    padding: 10px;
+    width: 200px;
+  }
+
+  .right-menu input[type=radio] {
+    margin-right: 5px;
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="logo">gIQ</div>
+  <div class="user">
+    Virgil Pana
+    <i>⚙️</i>
+    <i>⏻</i>
+  </div>
+</div>
+
+<div class="sidebar">
+  <ul>
+    <li class="active">Dashboard</li>
+    <li>Users</li>
+    <li>Priority</li>
+    <li>Collections</li>
+    <li>Archived</li>
+    <li>Deleted</li>
+    <li>Trends</li>
+    <li>Tasks</li>
+    <li>Filters</li>
+    <li>Stats</li>
+  </ul>
+</div>
+
+<div class="main">
+  <table>
+    <thead>
+      <tr>
+        <th>Customer</th>
+        <th>Company</th>
+        <th>Contact</th>
+        <th>Address</th>
+        <th>Revenue</th>
+        <th>VAT</th>
+        <th>Total Price</th>
+        <th>Status</th>
+        <th>Evolution</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>IBBP Apps</td>
+        <td>H&R Real I</td>
+        <td>Joshua O’N</td>
+        <td>276 Tremont Street, Boston, MA 02111</td>
+        <td>$420,930</td>
+        <td>$12,340</td>
+        <td>$432,270</td>
+        <td>FINISHED</td>
+        <td>⬆️</td>
+      </tr>
+      <tr>
+        <td>SRA - General Contacts</td>
+        <td>Great Wes</td>
+        <td>Eli Ahmad</td>
+        <td>1310 Mission Street San Francisco, CA</td>
+        <td>$312,840</td>
+        <td>$8,234</td>
+        <td>$321,074</td>
+        <td>WIP</td>
+        <td>⬇️</td>
+      </tr>
+      <tr>
+        <td>CCST</td>
+        <td>Fording Fi</td>
+        <td>Dennis Vill</td>
+        <td>San Diego, CA 92138-1796</td>
+        <td>$112,483</td>
+        <td>$3,120</td>
+        <td>$115,603</td>
+        <td>WIP</td>
+        <td>⬆️</td>
+      </tr>
+      <tr>
+        <td>Accupure</td>
+        <td>CC Imperi</td>
+        <td>Carlos Ric</td>
+        <td>1219-1223 Vine Street Philadelphia, PA</td>
+        <td>$840,742</td>
+        <td>$12,834</td>
+        <td>$853,576</td>
+        <td>ETA</td>
+        <td>⬇️</td>
+      </tr>
+      <tr>
+        <td>IBBP Apps</td>
+        <td>Atco Ltd.</td>
+        <td>Mary Hica</td>
+        <td>4933 W. Craig Rd. Suite 291 Las Vegas, NV</td>
+        <td>$845,948</td>
+        <td>$83,932</td>
+        <td>$1,082,22</td>
+        <td>FINISHED</td>
+        <td>⬆️</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
