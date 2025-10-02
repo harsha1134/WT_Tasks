@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLASS TimeTable</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: red;
+        }
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 60%;
+            margin: auto;
+            text-align: center;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 5px;
+        }
+        th {
+            background-color: rgb(25, 221, 38);
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-right: 140px;
+            margin-bottom: 0;
+            flex-wrap: wrap;
+        }
+        header img {
+            margin-top: 15px;
+            height: 60px;
+            margin-bottom: 0;
+        }
+
+        @media all {
+            h2 {
+                color: darkblue;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            table {
+                width: 100%;
+                font-size: 10px;
+                display: block;
+                overflow-x: auto; 
+            }
+            h1 {
+                font-size: 18px;
+                color: blue;
+            }
+            header {
+                flex-direction: column;
+                margin-right: 0;
+            }
+            header img {
+                height: 40px;
+            }
+        }
+
+        @media print {
+            body {
+                background: white;
+                color: black;
+                font-size: 12px;
+            }
+            h1 {
+                color: black;
+                text-decoration: underline;
+            }
+            table {
+                width: 100%;
+                border: 2px solid black;
+            }
+            th {
+                background: lightgray !important;
+                -webkit-print-color-adjust: exact; 
+            }
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <img src="mbuu.png" alt="MBU">
+        <h1>MOHAN BABU UNIVERSITY</h1>
+    </header>
+    <p>Sree Sainath Nagar, A. Rangampet - 517102</p>
+    <h2>SCHOOL OF COMPUTING</h2>
+    <h3><u>DEPARTMENT OF DATA SCIENCE</u></h3>
+    <h3><u>CLASS WORK TIME TABLE (2025 - 2026)</u></h3>
+    <h4>V Semester (CS - 2)</h4>
+    <table>
+        <tr>
+            <th>DAY/HR</th>
+            <th>11:10AM TO 12:05PM</th>
+            <th>12:05PM TO 01:00PM</th>
+            <th>01:00PM TO 02:15PM</th>
+            <th>02:15PM TO 03:10PM</th>
+            <th>03:10PM TO 04:05PM</th>
+            <th>04:05PM TO 04:15PM</th>
+            <th>04:15PM TO 05:10PM</th>
+            <th>05:10PM TO 06:15PM</th>
+        </tr>
+        <tr>
+            <th>MON</th>
+            <td colspan="2">QAVA</td>
+            <th rowspan="5">LUNCH BREAK</th>
+            <td colspan="2">ML LAB</td>
+            <th rowspan="5">BREAK</th>
+            <td>SSE(MOOC)</td>
+            <td>LIB</td>
+        </tr>
+        <tr>
+            <th>TUE</th>
+            <td colspan="2">QAVA</td>
+            <td colspan="2">CP ROOM No. 1810</td>
+            <td>WT</td>
+            <td>CAD(MOOC)</td>
+        </tr>
+        <tr>
+            <th>WED</th>
+            <td>CSE</td>
+            <td>WT</td>
+            <td colspan="2">WT LAB</td>
+            <td>SSE(MOOC)</td>
+            <td>CAD(MOOC)</td>
+        </tr>
+        <tr>
+            <th>THU</th>
+            <td colspan="2">CP ROOM No. 1810</td>
+            <td>CSE</td>
+            <td>ML</td>
+            <td>CAD(MOOC)</td>
+            <td>LIB</td>
+        </tr>
+        <tr>
+            <th>FRI</th>
+            <td>WT</td>
+            <td>ML</td>
+            <td>CSE</td>
+            <td>ML</td>
+            <td colspan="2">CP ROOM No. 1810</td>
+        </tr>
+    </table>
+</body>
+</html>
