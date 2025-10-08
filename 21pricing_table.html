@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple pricing table</title>
+    <style>
+        body{
+            background-color: aliceblue;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }   
+        table{
+            width: 90%;
+            margin: auto;
+            border-spacing: 20px;
+            
+        }
+        td{
+            background-color: white;
+            color: black;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            padding: 20px;
+            vertical-align: top;
+            width: 30%;
+        }
+        h2{
+            margin: 0;
+            font-size: 24px;
+            color: #333;
+        }
+        .subtitle{
+            color: gray;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        .price {
+            font-size: 32px;
+            margin: 15px ;
+            font-weight: bold;
+        }
+        .personal {
+             color: #7b4bc4; 
+            }
+        .business { 
+        color: #f97c5c; 
+        }
+        .enterprise { 
+        color: #5b3fb2; 
+        }
+        .month{
+            font-size: 16px;
+            color: black;
+            font-weight: bold;
+        }
+        ul{
+            list-style: none;
+            padding: 5px;
+            margin: 20px 0;
+            color: #444;
+            font-size: 16px;
+            line-height: 1.6em;
+        }
+        ul li{
+            padding-bottom: 15px;
+        }
+        .img{
+            width: 300px;
+            height: 300px;
+            margin: 10px ;
+        }
+        .btn{
+            padding: 10px ;
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-top: 15px;
+            border-radius: 25px;
+            font-size: 16px;
+            color: white;
+        }
+        .btn-personal{
+             background-color: #7b4bc4; 
+            }
+        .btn-business{
+             background-color: #f97c5c; 
+            } 
+        .btn-enterprise{ 
+            background-color: #5b3fb2;
+         }
+    </style>
+</head>
+<body>
+    <h1>Simple pricing table</h1>
+    <table>
+        <tr>
+            <td>
+                <h2>Personal</h2>
+                <p class="subtitle">We Think Ahead</p>
+                <p class="price personal">$29<span class="month">/month</span></p>
+                <ul>
+                    <li>Mobile-Optimized</li>
+                    <li>Free Custom Domain</li>
+                    <li>Best Web Hosting</li>
+                    <li>Outstanding Support Team</li>
+                    <li>Our Happy Customers</li>
+                </ul>
+                <img src="wt personal.jpg" alt="image not found" class="img">
+                <button class="btn btn-personal">READ MORE</button>    
+            </td>
+        
+        
+            <td>
+                <h2>Business</h2>
+                <p class="subtitle">Special Offer</p>
+                <p class="price business">$38<span class="month">/month</span></p>
+                <ul>
+                    <li>Mobile-Optimized</li>
+                    <li>Free Custom Domain</li>
+                    <li>Best Web Hosting</li>
+                    <li>Outstanding Support Team</li>
+                    <li>Our Happy Customers</li>
+                </ul>
+                <img src="wt bussiness.jpg" alt="image not found" class="img">
+                <button class="btn btn-business">READ MORE</button>
+
+            </td>
+            <td>
+                <h2>Enterprise</h2>
+                <p class="subtitle">Our Best Solution</p>
+                <p class="price enterprise">$75<span class="month">/month</span></p>
+                <ul>
+                    <li>Mobile-Optimized</li>
+                    <li>Free Custom Domain</li>
+                    <li>Best Web Hosting</li>
+                    <li>Outstanding Support Team</li>
+                    <li>Our happy Customers</li>
+                </ul>
+                <img src="wt enterprise.jpg" alt="image not found" class="img">    
+                <button class="btn btn-enterprise">READ MORE</button>
+            </td>
+        </tr>
+    </table>
+    
+</body>
+</html>
